@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color:  #f0eee7;
+    background-color:  #040404;
+    
+  }
+
+.container{
+    
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 375px
+  
+}
+.screen{
+    display: flex;
+    height: 25vh;
+    width: 330px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 40px 10px;
+    font-size: 3.8em;
+    font-weight: 200;
+    max-width: 330px;
+    max-height: 600px;
+}
+.keys{
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+    gap: 12px;
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #57484895;
+    border-radius: 100%;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.utilities{
+    background-color:  #7c7c7c ;
+    color: #141414;
+    transition-delay: 50ms;
+    transition-duration: 0.8s;
+    font-size: 1.6em;
+    
+   
+}
+.utilities:hover{
+    background-color: #d9d9d9;
+}
+.symbols{
+    background-color:   #f89d0f;
+    transition-delay: 20ms;
+    transition-duration: 0.5s;
+    font-size: 2em;
+    
+}
+.symbols:hover{
+  
+    background-color: #fcc78c;
+}
+
+.numbers{
+    background-color:  #343434;
+    transition-delay: 50ms;
+    transition-duration: 0.8s;
+}
+.numbers:hover{
+    background-color: #737373;
+}
+#zero{
+    padding-left: 31px;
+    width: 163px;
+    border-radius: 50px;
+    justify-content: flex-start;
+   
+}
+#zeropush{
+    grid-column-end: span 2;
+}
+#valor{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.active{
+    background-color: #ffffff;
+    color: #f6a20b; 
+}
+@media (min-width:680px) {
+    .screen{
+        width: 58vw;
+    }
+}
